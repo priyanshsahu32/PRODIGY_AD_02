@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="ijga"
+
+    android:fillViewport="true"
+    tools:context=".loginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+        ></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Welcome To Do List App"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="27dp"></TextView>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/progressbar"
+            android:visibility="gone"
+            ></ProgressBar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Email"
+                android:textSize="21dp"
+                android:textColorHint="#D3CFCF"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_field"
+                android:id="@+id/email_ET"
+                ></EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Password"
+                android:textSize="22dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#D3CFCF"
+                android:background="@drawable/input_field"
+                android:id="@+id/password_ET"
+                ></EditText>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_marginTop="30dp"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:id="@+id/loginBtn"
+                android:textSize="18sp"
+                android:background="@drawable/input_field"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#403B3B"
+                android:layout_margin="50dp"></View>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create an Account"
+                android:textSize="18sp"
+                android:id="@+id/registerLogin"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_bg"
+                android:textColor="#ffffff"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

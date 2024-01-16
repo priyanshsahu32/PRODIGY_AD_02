@@ -1,0 +1,26 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<item
+    android:title="Refresh"
+    app:showAsAction="always"
+    android:id="@+id/refresh_menu"
+    android:icon="@drawable/baseline_refresh_24"
+    
+
+    ></item>
+
+
+<item
+    android:title="Share App"
+    android:id="@+id/share"
+    android:icon="@drawable/baseline_share_24"
+    app:showAsAction="always"
+
+
+    ></item>
+
+
+</menu>
