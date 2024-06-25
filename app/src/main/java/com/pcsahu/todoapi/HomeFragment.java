@@ -115,7 +115,7 @@ public class HomeFragment extends Fragment implements RecycleViewClickListener {
         arrayList = new ArrayList<>();
 
         progressBar.setVisibility( View.VISIBLE );
-        String url = "https://todoapii-production.up.railway.app/api/todo";
+        String url = "https://prodigy-ad-02.onrender.com/api/todo";
 
         JsonObjectRequest jor = new JsonObjectRequest( Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
@@ -347,7 +347,7 @@ public class HomeFragment extends Fragment implements RecycleViewClickListener {
     private void finishTodo(String id, int position) {
 
 
-        String url  ="https://todoapii-production.up.railway.app/api/todo/"+id;
+        String url  ="https://prodigy-ad-02.onrender.com/api/todo/"+id;
 
         HashMap<String,String> body = new HashMap<>();
 
@@ -438,7 +438,7 @@ public class HomeFragment extends Fragment implements RecycleViewClickListener {
     }
 
     private void updateTask(String id, String title, String desc) {
-        String url  ="https://todoapii-production.up.railway.app/api/todo/"+id;
+        String url  ="https://prodigy-ad-02.onrender.com/api/todo/"+id;
 
         HashMap<String,String> body = new HashMap<>();
 
@@ -493,7 +493,7 @@ public class HomeFragment extends Fragment implements RecycleViewClickListener {
 
     private void deleteTodo(String id, int position) {
 
-        String url  ="https://todoapii-production.up.railway.app/api/todo/"+id;
+        String url  ="https://prodigy-ad-02.onrender.com/api/todo/"+id;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest( Request.Method.DELETE, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -523,7 +523,7 @@ public class HomeFragment extends Fragment implements RecycleViewClickListener {
 
     private void addTask(String title, String desc) {
 
-        String Url = "https://todoapii-production.up.railway.app/api/todo";
+        String Url = "https://prodigy-ad-02.onrender.com/api/todo";
 
         HashMap<String,String> body = new HashMap<>();
 
