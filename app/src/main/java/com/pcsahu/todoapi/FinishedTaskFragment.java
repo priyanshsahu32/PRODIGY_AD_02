@@ -98,7 +98,7 @@ public class FinishedTaskFragment extends Fragment implements RecycleViewClickLi
         arrayList = new ArrayList<>();
 
         progressBar.setVisibility( View.VISIBLE );
-        String url = "https://todoapii-production.up.railway.app/api/todo/finished";
+        String url = "https://prodigy-ad-02.onrender.com/api/todo/";
 
         JsonObjectRequest jor = new JsonObjectRequest( Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
@@ -195,7 +195,7 @@ public class FinishedTaskFragment extends Fragment implements RecycleViewClickLi
 
     private void deleteTodo(String id, int position) {
 
-        String url  ="https://todoapii-production.up.railway.app/api/todo/"+id;
+        String url  ="https://prodigy-ad-02.onrender.com/api/todo/"+id;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest( Request.Method.DELETE, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
