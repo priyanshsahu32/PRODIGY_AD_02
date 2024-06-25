@@ -205,7 +205,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setDrawerClick(int itemId){
        if(itemId == R.id.action_finish_Task){
-           getSupportFragmentManager().beginTransaction().replace(R.id.content,new FinishedTaskFragment()).commit();
+               getSupportFragmentManager().beginTransaction().replace(R.id.content,new FinishedTaskFragment()).commit();
 
        }
        else if(itemId == R.id.action_home){
